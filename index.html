@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>menu indicator</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" intergrity="sha256-H+K7U5CnXL1h5ywQfkSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<div class="items">
+				<span class="fa fa-home"></span>
+				<span class="fa fa-user"></span>
+				<span class="fa fa-info"></span>
+				<span class="fa fa-question"></span>
+				<span class="fa fa-cog"></span>
+			</div>
+			<div class="labels">
+				<label id="home">Home</label>
+				<label id="profile">Profile</label>
+				<label id="info">Info</label>
+				<label id="help">Help</label>
+				<label id="setting">Settings</label>
+			</div>
+		</div>/
+	</div>
+	<script>
+		$(".fa-home").hover(function(){
+	  $("#home").toggleClass("active");
+   });
+       $(".fa-user").hover(function(){
+	  $("#profile").toggleClass("active");
+   });
+      $(".fa-info").hover(function(){
+	 $("#info").toggleClass("active");
+   });
+     $(".fa-question").hover(function(){
+	$("#help").toggleClass("active");
+   });
+     $(".fa-cog").hover(function(){
+	$("#setting").toggleClass("active");
+  });
+	</script>
+</body>
+</html>
